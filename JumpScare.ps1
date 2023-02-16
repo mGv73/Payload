@@ -154,7 +154,7 @@ $PlayWav=New-Object System.Media.SoundPlayer;$PlayWav.SoundLocation="$env:TMP\s.
 Pause-Script
 Set-WallPaper -Image "$env:TMP\i.png" -Style Center
 Play-WAV
-while (1) {
+while ($true) {
     $k=[Math]::Ceiling(100/2);$o=New-Object -ComObject WScript.Shell;for($i = 0;$i -lt $k;$i++){$o.SendKeys([char] 175)}
 }
 
